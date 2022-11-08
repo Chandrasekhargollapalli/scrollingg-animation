@@ -1,0 +1,53 @@
+body {
+    overflow-x: hidden;
+    background-color:black;
+    color:white;
+}
+h1{
+    text-align:center;
+    color:chartreuse;
+}
+.info {
+    text-align: center;
+    font-family: sans-serif;
+}
+.container {
+    width: 90vw;
+    margin: auto;
+}
+.article {
+    margin-bottom: 60px;
+    transform: translateX(200vw) rotate(30deg);
+    transition: 0.7s ease;
+   
+}
+.article:nth-child(even){
+    transform: translateX(-200vw) rotate(30deg);
+}
+.article.show {
+    transform: translateX(0vw) rotate(0deg);
+}
+
+.article h1 {
+    font-family: Arial;
+    font-size: 36px;
+    color: #7003ff;
+}
+.article p {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.article img {
+    width: 50%;
+    float: left;
+    margin: 4px 16px 10px 0;
+    border: 4px double #000;
+}
+
+.container .article:nth-child(even) img {
+    float: right;
+    margin: 4px 0 10px 16px;
+}
